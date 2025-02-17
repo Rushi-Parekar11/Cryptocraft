@@ -68,7 +68,7 @@ function Home() {
             <h5>{isLoading ? <Skeleton/>:"Your gateway to mastering crypto trading."}</h5>
           </center>
         </div>
-        {isLoading ? (<Skeleton width={400} height={300} style={{marginLeft:'120px'}}/>) : (<div className="heroImg"><img src={heroImg} alt="Hero Banner" className="mainimg" /></div>)}
+        {isLoading ? (<Skeleton  style={{marginLeft:'120px'}}/>) : (<div className="heroImg"><img src={heroImg} alt="Hero Banner" className="mainimg" /></div>)}
 
       </div>
 
