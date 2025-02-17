@@ -8,6 +8,8 @@ const {signupValidation,loginValidation} = require("../Middelwares/AllValidation
 router.get('/',(req,res)=>{
     res.send('server is  running!');
   })
+
+  
 router.get('/ping',(req,res)=>{
   res.send('ping ok !');
 })

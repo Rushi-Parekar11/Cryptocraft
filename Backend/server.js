@@ -21,6 +21,9 @@ mongoose.connect(process.env.DB_URL)
    console.log("MongoBD connection error!",err)
 })
 
+app.get('/',(req,res)=>{
+    res.send(' crypto server running !');
+  })
 
 
 app.listen(PORT,()=>{
