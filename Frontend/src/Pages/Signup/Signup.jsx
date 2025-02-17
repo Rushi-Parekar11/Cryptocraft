@@ -21,7 +21,7 @@ function Signup() {
       toast.error("Please fill in all the fields");
     }
     try {
-      const url = "http://localhost:8080/signup";
+      const url = "https://cryptocraft-backend.vercel.app/signup";
       const response = await fetch(url,{
         method:"POST",
         headers:{

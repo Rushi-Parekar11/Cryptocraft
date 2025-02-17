@@ -104,7 +104,7 @@ function Coin() {
     
       console.log(coinData);
       try {
-        const url = "http://localhost:8080/coin/";
+        const url = "https://cryptocraft-backend.vercel.app/coin/";
         const response = await axios.post(url, coinData, {
           headers: { 'Content-Type': 'application/json' },
         });

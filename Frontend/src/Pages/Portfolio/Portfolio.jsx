@@ -12,7 +12,7 @@ function Portfolio() {
 
     const fetchPortfolio = async () => {
         try {
-            const response = await fetch('http://localhost:8080/portfolio', {
+            const response = await fetch('https://cryptocraft-backend.vercel.app/portfolio', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',

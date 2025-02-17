@@ -30,7 +30,7 @@ function Login() {
     }
 
     try {
-      const url = "http://localhost:8080/login";
+      const url = "https://cryptocraft-backend.vercel.app/login";
       const response = await fetch(url,{
         method:"POST",
         headers:{
