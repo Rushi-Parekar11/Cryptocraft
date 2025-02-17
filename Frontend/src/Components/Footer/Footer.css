@@ -1,0 +1,13 @@
+#mn{
+border-radius: 10px;
+padding-left: 15px;
+padding-right: 15px;
+}
+@media (max-width: 1000px) {
+#mn{
+        border-radius: 0px;
+        padding-left: 1px;
+        padding-right: 10px;
+        }
+    
+}

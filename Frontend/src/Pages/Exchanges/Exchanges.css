@@ -1,0 +1,48 @@
+.exchange-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.exchange-card {
+    display: flex;
+    align-items: center;
+    width: 300px; /* Responsive Width */
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.exchange-card:hover {
+    transform: scale(1.05);
+}
+
+.exchange-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.exchange-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.exchange-info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.exchange-info p {
+    margin: 3px 0;
+    font-size: 14px;
+    color: #555;
+}
