@@ -57,6 +57,16 @@ function Home() {
     fetchData();
   }, [currency]);
 
+  useEffect(() => {
+    let visitCount = localStorage.getItem("visitCount") || 0;
+    visitCount++;
+    localStorage.setItem("visitCount", visitCount);
+    setVisitCount(visitCount);
+  }, []);
+  
+  const [visitCount, setVisitCount] = useState(0);
+
+
   return (
     <div className="HomeMain">
       {/* Hero Section */}
@@ -65,10 +75,16 @@ function Home() {
           <h1> {isLoading ? <Skeleton  /> : "India's First Platform for"}</h1>
           <h2>{isLoading ? <Skeleton/>:"Learning Crypto Trading!"}</h2>
           <center>
-            <h5>{isLoading ? <Skeleton/>:"Your gateway to mastering crypto trading."}</h5>
-          </center>
+            <h5>{isLoading ? <Skeleton/>:"Your gateway to mastering crypto trading."} <p>Website Visits: {visitCount}</p></h5>
+            </center>
         </div>
-        {isLoading ? (<Skeleton  style={{marginLeft:'120px'}}/>) : (<div className="heroImg"><img src={heroImg} alt="Hero Banner" className="mainimg" /></div>)}
+        <div className="heroImg">
+  {isLoading ? (
+    <Skeleton className="mainimg" />
+  ) : (
+    <img src={heroImg} alt="Hero Banner" className="mainimg" />
+  )}
+</div>
 
       </div>
 
